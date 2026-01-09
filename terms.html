@@ -1,75 +1,208 @@
-<!DOCTYPE html>
+<!-- terms.html -->
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - Last Alarm</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms of Service — [APP_NAME]</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"><a href="index.html" style="color: #fff; text-decoration: none;">Last Alarm</a></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./index.html" aria-label="[APP_NAME] Home">
+                <span class="brand-mark">◎</span>
+                <span class="brand-name">[APP_NAME]</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="./index.html">Home</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./terms.html" class="active">Terms</a>
+                <a href="./refund.html">Refunds</a>
+                <a href="./contact.html">Contact</a>
             </nav>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"
+                data-nav-toggle>
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav" hidden>
+            <div class="container mobile-nav-inner">
+                <a href="./index.html">Home</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./terms.html" class="active">Terms</a>
+                <a href="./refund.html">Refunds</a>
+                <a href="./contact.html">Contact</a>
+            </div>
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="legal-content">
+    <main class="doc">
+        <div class="container doc-inner">
+            <aside class="doc-aside">
+                <div class="doc-card">
+                    <h2>Terms of Service</h2>
+                    <p class="muted">Last updated: [DATE]</p>
+                    <div class="doc-links">
+                        <a href="#acceptance">Acceptance</a>
+                        <a href="#eligibility">Eligibility</a>
+                        <a href="#service">Service Description</a>
+                        <a href="#payments">Payments</a>
+                        <a href="#user-content">User Responsibilities</a>
+                        <a href="#prohibited">Prohibited Use</a>
+                        <a href="#disclaimers">Disclaimers</a>
+                        <a href="#limitation">Limitation of Liability</a>
+                        <a href="#termination">Termination</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </aside>
+
+            <article class="doc-content">
                 <h1>Terms of Service</h1>
-                <p>Last updated: [Date]</p>
+                <p class="muted">
+                    These Terms of Service (“Terms”) govern your use of [APP_NAME] (the “Service”) provided by
+                    [COMPANY_NAME] (“we”, “us”).
+                    By using the Service, you agree to these Terms.
+                </p>
 
-                <h2>1. Acceptance of Terms</h2>
-                <p>By downloading or using the "Last Alarm" application, these terms will automatically apply to you –
-                    you should make sure therefore that you read them carefully before using the app.</p>
+                <section class="doc-section" id="acceptance">
+                    <h2>1. Acceptance</h2>
+                    <p>If you do not agree to these Terms, do not use the Service.</p>
+                </section>
 
-                <h2>2. Use License</h2>
-                <p>You are not allowed to copy, or modify the app, any part of the app, or our trademarks in any way.
-                    You are not allowed to attempt to extract the source code of the app, and you also shouldn't try to
-                    translate the app into other languages, or make derivative versions.</p>
+                <section class="doc-section" id="eligibility">
+                    <h2>2. Eligibility</h2>
+                    <p>You must be at least the age of majority in your jurisdiction to use the Service.</p>
+                </section>
 
-                <h2>3. Subscriptions and Payments</h2>
-                <p>The app offers subscription-based access. Payment will be charged to your iTunes or Google Play
-                    Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned
-                    off at least 24-hours before the end of the current period.</p>
+                <section class="doc-section" id="service">
+                    <h2>3. Service Description</h2>
+                    <p>
+                        The Service is a self-commitment and accountability tool. Users configure their own schedule,
+                        reference location,
+                        and success condition. The Service records outcomes based on the configured condition.
+                    </p>
+                    <p class="muted">
+                        The Service is not a gambling product and does not offer prizes, rewards, or opportunities to
+                        “win money.”
+                    </p>
+                </section>
 
-                <h2>4. Location Data</h2>
-                <p>Our app requires access to your device's location data to function properly. By using this app, you
-                    consent to the collection and use of this information as described in our Privacy Policy.</p>
+                <section class="doc-section" id="payments">
+                    <h2>4. Payments</h2>
+                    <p>
+                        Some features may involve payments (for example, a user-chosen commitment amount, subscription,
+                        or other paid features).
+                        Any chargeable amount will be displayed clearly and require user confirmation.
+                    </p>
+                    <ul class="bullets">
+                        <li>No hidden fees or surprise charges.</li>
+                        <li>Pricing, if any, is presented before confirmation.</li>
+                        <li>Payment processing may be handled by third-party processors.</li>
+                    </ul>
+                    <p>
+                        For cancellation and refund rules, see our <a href="./refund.html">Refund & Cancellation
+                            Policy</a>.
+                    </p>
+                </section>
 
-                <h2>5. Disclaimer</h2>
-                <p>The app is provided on an "as is" and "as available" basis. We do not warrant that the app will be
-                    uninterrupted or error-free. We are not responsible for missed alarms due to GPS signal loss,
-                    battery failure, or other technical issues.</p>
+                <section class="doc-section" id="user-content">
+                    <h2>5. User Responsibilities</h2>
+                    <ul class="bullets">
+                        <li>You are responsible for maintaining account security.</li>
+                        <li>You are responsible for the accuracy of your configured commitment settings.</li>
+                        <li>You must not misuse the Service or attempt to bypass its rules or security.</li>
+                    </ul>
+                </section>
 
-                <h2>6. Changes to Terms</h2>
-                <p>We may update our Terms and Conditions from time to time. Thus, you are advised to review this page
-                    periodically for any changes.</p>
+                <section class="doc-section" id="prohibited">
+                    <h2>6. Prohibited Use</h2>
+                    <ul class="bullets">
+                        <li>Illegal activities or violation of applicable laws</li>
+                        <li>Attempting to reverse engineer, exploit, or attack the Service</li>
+                        <li>Fraud, chargeback abuse, or unauthorized payment activity</li>
+                        <li>Harassment, abuse, or harmful conduct toward others</li>
+                    </ul>
+                </section>
 
-                <h2>7. Contact Us</h2>
-                <p>If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact
-                    us at [support@example.com].</p>
-            </div>
+                <section class="doc-section" id="disclaimers">
+                    <h2>7. Disclaimers</h2>
+                    <p>
+                        The Service is provided “as is” and “as available.” We do not guarantee uninterrupted access,
+                        exact location accuracy,
+                        or that the Service will meet every user’s expectations.
+                    </p>
+                </section>
+
+                <section class="doc-section" id="limitation">
+                    <h2>8. Limitation of Liability</h2>
+                    <p>
+                        To the maximum extent permitted by law, [COMPANY_NAME] will not be liable for indirect,
+                        incidental, special,
+                        consequential, or punitive damages arising from your use of the Service.
+                    </p>
+                </section>
+
+                <section class="doc-section" id="termination">
+                    <h2>9. Termination</h2>
+                    <p>
+                        We may suspend or terminate access to the Service if you violate these Terms or misuse the
+                        Service.
+                        You may stop using the Service at any time.
+                    </p>
+                </section>
+
+                <section class="doc-section" id="contact">
+                    <h2>10. Contact</h2>
+                    <p class="contact-box">
+                        <strong>[COMPANY_NAME]</strong><br />
+                        Email: <a href="mailto:support@[yourdomain].com">support@[yourdomain].com</a><br />
+                        Address: [BUSINESS_ADDRESS]
+                    </p>
+                </section>
+
+                <div class="doc-footer">
+                    <a class="btn" href="./index.html">Back to Home</a>
+                    <a class="btn ghost" href="./refund.html">Refunds</a>
+                </div>
+            </article>
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Last Alarm. All rights reserved.</p>
-            <div class="links">
-                <a href="terms.html">Terms of Service</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="refund.html">Refund Policy</a>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="brand-row">
+                    <span class="brand-mark">◎</span>
+                    <span class="brand-name">[APP_NAME]</span>
+                </div>
+                <p class="muted">© <span id="year"></span> [COMPANY_NAME].</p>
+            </div>
+            <div class="footer-links" aria-label="Footer">
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./terms.html">Terms of Service</a>
+                <a href="./refund.html">Refund & Cancellation</a>
+                <a href="./contact.html">Contact</a>
             </div>
         </div>
     </footer>
+
+    <script>
+        const btn = document.querySelector('[data-nav-toggle]');
+        const mobileNav = document.getElementById('mobileNav');
+        if (btn && mobileNav) {
+            btn.addEventListener('click', () => {
+                const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!isOpen));
+                mobileNav.hidden = isOpen;
+            });
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

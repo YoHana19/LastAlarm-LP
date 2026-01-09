@@ -1,109 +1,236 @@
-<!DOCTYPE html>
+<!-- index.html -->
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last Alarm - Location Based Smart Alarm</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="[APP_NAME] is a self-commitment tool to help you start your day on time, with clear user control and transparent policies." />
+    <title>[APP_NAME] — Self-Commitment Morning Tool</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./assets/favicon.png" />
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">Last Alarm</div>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./index.html" aria-label="[APP_NAME] Home">
+                <span class="brand-mark">◎</span>
+                <span class="brand-name">[APP_NAME]</span>
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./refund.html">Refunds</a>
+                <a href="./contact.html">Contact</a>
             </nav>
+
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"
+                data-nav-toggle>
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav" hidden>
+            <div class="container mobile-nav-inner">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./refund.html">Refunds</a>
+                <a href="./contact.html">Contact</a>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="container">
-                <h1>Never Oversleep Your Stop Again.</h1>
-                <p>The intelligent alarm clock that wakes you up based on your location. Perfect for commuters and travelers.</p>
-                <a href="#pricing" class="btn">Get Started</a>
-            </div>
-        </section>
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow">Self-commitment, not punishment</p>
+                    <h1>Start your day on time — by choosing your own commitment.</h1>
+                    <p class="lead">
+                        [APP_NAME] helps users voluntarily set a personal morning commitment and track follow-through.
+                        Users always choose the schedule, the conditions, and any optional financial commitment in
+                        advance.
+                    </p>
 
-        <section id="features">
-            <div class="container">
-                <h2>Why Last Alarm?</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <h3>📍 Location Precision</h3>
-                        <p>Set alarms based on GPS radius. The alarm triggers only when you are close to your destination.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="./contact.html">Get in touch</a>
+                        <a class="btn ghost" href="#how-it-works">How it works</a>
                     </div>
-                    <div class="feature-card">
-                        <h3>🔋 Battery Efficient</h3>
-                        <p>Optimized background location tracking ensures your battery lasts all day while keeping you safe.</p>
+
+                    <div class="trust-row" role="list" aria-label="Key assurances">
+                        <div class="pill" role="listitem">Transparent policies</div>
+                        <div class="pill" role="listitem">User-controlled settings</div>
+                        <div class="pill" role="listitem">Support available</div>
                     </div>
-                    <div class="feature-card">
-                        <h3>🎧 Headphone Mode</h3>
-                        <p>Discreet alerts through your headphones so you don't disturb others on the train or bus.</p>
+                </div>
+
+                <div class="hero-card" aria-label="Product summary card">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">What you can set</h2>
+                            <p class="card-subtitle">Clear inputs, clear outcomes</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class="checklist">
+                                <li>Reference location (e.g., home)</li>
+                                <li>Target time (your schedule)</li>
+                                <li>Success condition (e.g., being outside the area)</li>
+                                <li>Optional commitment amount (user-confirmed)</li>
+                            </ul>
+
+                            <div class="note">
+                                <strong>Important:</strong> [APP_NAME] does not use hidden fees or surprise charges.
+                                Any payment is explicitly confirmed by the user.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="pricing">
+        <section class="section" id="how-it-works">
             <div class="container">
-                <h2>Simple Pricing</h2>
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <h3>Monthly Plan</h3>
-                        <span class="trial-info">7-Day Free Trial</span>
-                        <div class="price">$[X.99]<span>/mo</span></div>
-                        <p>Full access to all premium features.</p>
-                        <br>
-                        <a href="#" class="btn">Subscribe</a>
+                <h2>How it works</h2>
+                <p class="muted">
+                    The system records whether your pre-defined condition was met. You remain in control at every step.
+                </p>
+
+                <div class="grid-3">
+                    <div class="feature">
+                        <div class="feature-icon">1</div>
+                        <h3>Set your commitment</h3>
+                        <p>
+                            Choose your reference location, target time, and what “success” means for you.
+                        </p>
                     </div>
-                    <div class="pricing-card highlight">
-                        <h3>Yearly Plan</h3>
-                        <span class="trial-info">14-Day Free Trial</span>
-                        <div class="price">$[XX.99]<span>/yr</span></div>
-                        <p>Save 2 months with annual billing.</p>
-                        <br>
-                        <a href="#" class="btn">Subscribe</a>
+
+                    <div class="feature">
+                        <div class="feature-icon">2</div>
+                        <h3>Optional financial commitment</h3>
+                        <p>
+                            If enabled, you set the amount and confirm it clearly before it applies. No dynamic pricing.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">3</div>
+                        <h3>Review the outcome</h3>
+                        <p>
+                            At the scheduled time, the outcome is recorded based on the condition you chose.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="info" class="info-section">
+        <section class="section alt">
             <div class="container">
-                <h2>Provider Information</h2>
-                <div class="info-content">
-                    <p><strong>Business Name:</strong> [Your Business Name / Trade Name]</p>
-                    <p><strong>Address:</strong> [Your Business Address, City, Country]</p>
-                    <p><strong>Phone:</strong> [Your Business Phone Number]</p>
+                <h2>Payments & transparency</h2>
+                <div class="grid-2">
+                    <div class="panel">
+                        <h3>What we do</h3>
+                        <ul class="bullets">
+                            <li>Show the amount and purpose before confirmation</li>
+                            <li>Provide a clear account history of events</li>
+                            <li>Offer support for disputes and technical issues</li>
+                        </ul>
+                    </div>
+                    <div class="panel">
+                        <h3>What we do not do</h3>
+                        <ul class="bullets">
+                            <li>No hidden fees</li>
+                            <li>No surprise charges</li>
+                            <li>No gambling, prizes, or “win money” mechanics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout">
+                    <div class="callout-inner">
+                        <div>
+                            <h3>Need the policies?</h3>
+                            <p class="muted">All required pages are available below.</p>
+                        </div>
+                        <div class="callout-actions">
+                            <a class="btn" href="./privacy.html">Privacy Policy</a>
+                            <a class="btn" href="./terms.html">Terms</a>
+                            <a class="btn" href="./refund.html">Refunds</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="info-section" style="background-color: transparent;">
+        <section class="section">
             <div class="container">
-                <h2>Support</h2>
-                <p style="color: var(--muted-text); margin-bottom: 20px;">Need help? Contact our support team.</p>
-                <div class="info-content">
-                    <p><strong>Email:</strong> <a href="mailto:[support@example.com]">[support@example.com]</a></p>
+                <h2>FAQ</h2>
+                <div class="faq">
+                    <details>
+                        <summary>Does the app charge me automatically?</summary>
+                        <p>
+                            Any payment requires clear user confirmation in advance, based on the user’s own chosen
+                            settings.
+                            We do not apply hidden or unexpected charges.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>How is location used?</summary>
+                        <p>
+                            Location is used only to evaluate the user-defined success condition and to show status.
+                            See the Privacy Policy for details, storage, and deletion options.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>What if location services fail?</summary>
+                        <p>
+                            If a technical issue may have impacted the recorded outcome, contact support for review.
+                            We handle disputes case-by-case per our Refund & Cancellation Policy.
+                        </p>
+                    </details>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Last Alarm. All rights reserved.</p>
-            <div class="links">
-                <a href="terms.html">Terms of Service</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="refund.html">Refund Policy</a>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="brand-row">
+                    <span class="brand-mark">◎</span>
+                    <span class="brand-name">[APP_NAME]</span>
+                </div>
+                <p class="muted">
+                    © <span id="year"></span> [COMPANY_NAME]. All rights reserved.
+                </p>
+            </div>
+
+            <div class="footer-links" aria-label="Footer">
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./terms.html">Terms of Service</a>
+                <a href="./refund.html">Refund & Cancellation</a>
+                <a href="./contact.html">Contact</a>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Minimal JS: mobile nav + year
+        const btn = document.querySelector('[data-nav-toggle]');
+        const mobileNav = document.getElementById('mobileNav');
+        if (btn && mobileNav) {
+            btn.addEventListener('click', () => {
+                const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!isOpen));
+                mobileNav.hidden = isOpen;
+            });
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>

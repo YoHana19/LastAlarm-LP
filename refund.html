@@ -1,66 +1,181 @@
-<!DOCTYPE html>
+<!-- refund.html -->
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refund & Cancellation Policy - Last Alarm</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Refund & Cancellation Policy — [APP_NAME]</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"><a href="index.html" style="color: #fff; text-decoration: none;">Last Alarm</a></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./index.html" aria-label="[APP_NAME] Home">
+                <span class="brand-mark">◎</span>
+                <span class="brand-name">[APP_NAME]</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="./index.html">Home</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./refund.html" class="active">Refunds</a>
+                <a href="./contact.html">Contact</a>
             </nav>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"
+                data-nav-toggle>
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav" hidden>
+            <div class="container mobile-nav-inner">
+                <a href="./index.html">Home</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./refund.html" class="active">Refunds</a>
+                <a href="./contact.html">Contact</a>
+            </div>
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="legal-content">
+    <main class="doc">
+        <div class="container doc-inner">
+            <aside class="doc-aside">
+                <div class="doc-card">
+                    <h2>Refunds & Cancellation</h2>
+                    <p class="muted">Last updated: [DATE]</p>
+                    <div class="doc-links">
+                        <a href="#overview">Overview</a>
+                        <a href="#cancellation">Cancellation</a>
+                        <a href="#refunds">Refunds</a>
+                        <a href="#disputes">Disputes</a>
+                        <a href="#subscriptions">Subscriptions</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </aside>
+
+            <article class="doc-content">
                 <h1>Refund & Cancellation Policy</h1>
-                <p>Last updated: [Date]</p>
+                <p class="muted">
+                    This policy explains how cancellations and refunds work for [APP_NAME].
+                    Our goal is transparency and fair handling in case of technical issues.
+                </p>
 
-                <h2>1. Cancellations</h2>
-                <p>You can cancel your subscription at any time through your device settings or the app store (Apple App
-                    Store or Google Play Store) directly. To avoid being charged for the next period, you must cancel at
-                    least 24 hours before your current subscription period ends.</p>
+                <section class="doc-section" id="overview">
+                    <h2>Overview</h2>
+                    <ul class="bullets">
+                        <li>Any payable amount is shown clearly before confirmation.</li>
+                        <li>Users can cancel or modify commitments before the scheduled time (see rules below).</li>
+                        <li>Refunds are reviewed case-by-case for verified technical issues or service outages.</li>
+                    </ul>
+                </section>
 
-                <h2>2. Refunds</h2>
-                <p><strong>App Store (Apple):</strong> All refunds for iOS purchases are managed directly by Apple.
-                    Please contact Apple Support for refund requests.</p>
-                <p><strong>Google Play Store:</strong> If you made a purchase through Google Play, you may request a
-                    refund through Google's refund system or contact us within 48 hours of purchase with your order
-                    number.</p>
-                <p><strong>Direct Payments:</strong> If available, refunds for direct payments are handled on a
-                    case-by-case basis. Please contact support.</p>
+                <section class="doc-section" id="cancellation">
+                    <h2>Cancellation</h2>
+                    <p>
+                        Users may cancel or modify a scheduled commitment before the scheduled time according to the
+                        rules shown at setup.
+                        The Service will present applicable windows (e.g., “cancel until [TIME]”).
+                    </p>
+                    <p class="muted">
+                        If you cannot cancel due to a technical error, contact support as soon as possible.
+                    </p>
+                </section>
 
-                <h2>3. Free Trial</h2>
-                <p>If you signed up for a free trial, you may cancel at any time before the trial period ends to avoid
-                    being charged.</p>
+                <section class="doc-section" id="refunds">
+                    <h2>Refunds</h2>
+                    <p>
+                        Because the Service records outcomes based on user-defined conditions (including optional
+                        location checks),
+                        refunds are not guaranteed for normal outcomes.
+                    </p>
+                    <p><strong>However, we will review refund requests for:</strong></p>
+                    <ul class="bullets">
+                        <li>Verified system outages affecting outcome recording</li>
+                        <li>Payment processing errors (duplicate charges, incorrect amount, etc.)</li>
+                        <li>Verified location-service failures that materially affected evaluation</li>
+                    </ul>
+                    <p>
+                        If approved, refunds are processed to the original payment method where possible.
+                    </p>
+                </section>
 
-                <h2>4. Contact Us</h2>
-                <p>If you have any questions regarding our Refund & Cancellation Policy, please contact us at
-                    [support@example.com] or refer to our support page.</p>
-            </div>
+                <section class="doc-section" id="disputes">
+                    <h2>Disputes</h2>
+                    <p>
+                        If you believe a charge or outcome is incorrect, contact support with:
+                    </p>
+                    <ul class="bullets">
+                        <li>Your account email</li>
+                        <li>Date/time of the commitment</li>
+                        <li>A brief description of the issue</li>
+                        <li>Any relevant screenshots (optional)</li>
+                    </ul>
+                    <p class="muted">
+                        We may request additional details to investigate (e.g., device settings, permission state).
+                    </p>
+                </section>
+
+                <section class="doc-section" id="subscriptions">
+                    <h2>Subscriptions (if applicable)</h2>
+                    <p>
+                        If the Service offers subscriptions, billing cycles, cancellation timing, and any prorations
+                        will be disclosed at purchase.
+                        Users can cancel future renewals at any time; access remains until the end of the billing period
+                        unless otherwise stated.
+                    </p>
+                </section>
+
+                <section class="doc-section" id="contact">
+                    <h2>Contact</h2>
+                    <p class="contact-box">
+                        <strong>[COMPANY_NAME]</strong><br />
+                        Email: <a href="mailto:support@[yourdomain].com">support@[yourdomain].com</a><br />
+                        Address: [BUSINESS_ADDRESS]
+                    </p>
+                </section>
+
+                <div class="doc-footer">
+                    <a class="btn" href="./index.html">Back to Home</a>
+                    <a class="btn ghost" href="./contact.html">Contact Support</a>
+                </div>
+            </article>
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Last Alarm. All rights reserved.</p>
-            <div class="links">
-                <a href="terms.html">Terms of Service</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="refund.html">Refund Policy</a>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="brand-row">
+                    <span class="brand-mark">◎</span>
+                    <span class="brand-name">[APP_NAME]</span>
+                </div>
+                <p class="muted">© <span id="year"></span> [COMPANY_NAME].</p>
+            </div>
+            <div class="footer-links" aria-label="Footer">
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./terms.html">Terms of Service</a>
+                <a href="./refund.html">Refund & Cancellation</a>
+                <a href="./contact.html">Contact</a>
             </div>
         </div>
     </footer>
+
+    <script>
+        const btn = document.querySelector('[data-nav-toggle]');
+        const mobileNav = document.getElementById('mobileNav');
+        if (btn && mobileNav) {
+            btn.addEventListener('click', () => {
+                const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!isOpen));
+                mobileNav.hidden = isOpen;
+            });
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

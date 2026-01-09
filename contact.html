@@ -1,0 +1,130 @@
+<!-- contact.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — [APP_NAME]</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./index.html" aria-label="[APP_NAME] Home">
+                <span class="brand-mark">◎</span>
+                <span class="brand-name">[APP_NAME]</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="./index.html">Home</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./refund.html">Refunds</a>
+                <a href="./contact.html" class="active">Contact</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"
+                data-nav-toggle>
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav" hidden>
+            <div class="container mobile-nav-inner">
+                <a href="./index.html">Home</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./refund.html">Refunds</a>
+                <a href="./contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Contact</h1>
+                <p class="muted">
+                    For support inquiries, disputes, refund requests, or business questions, reach us via email.
+                    (This site is static; form submissions are not processed here.)
+                </p>
+
+                <div class="grid-2">
+                    <div class="panel">
+                        <h2>Support</h2>
+                        <p>
+                            Email: <a href="mailto:support@[yourdomain].com">support@[yourdomain].com</a><br />
+                            Expected response time: 1–3 business days
+                        </p>
+                        <p class="muted">
+                            Please include: your account email, date/time of issue, and a brief description.
+                        </p>
+                        <a class="btn primary"
+                            href="mailto:support@[yourdomain].com?subject=Support%20Request%20-%20[APP_NAME]">
+                            Email Support
+                        </a>
+                    </div>
+
+                    <div class="panel">
+                        <h2>Business</h2>
+                        <p>
+                            Company: <strong>[COMPANY_NAME]</strong><br />
+                            Address: [BUSINESS_ADDRESS]
+                        </p>
+                        <p class="muted">
+                            If Stripe or other partners request additional business details, we can provide them upon
+                            request.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="callout">
+                    <div class="callout-inner">
+                        <div>
+                            <h3>Policies</h3>
+                            <p class="muted">For payment, privacy, and legal terms, use the links below.</p>
+                        </div>
+                        <div class="callout-actions">
+                            <a class="btn" href="./privacy.html">Privacy</a>
+                            <a class="btn" href="./terms.html">Terms</a>
+                            <a class="btn" href="./refund.html">Refunds</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="brand-row">
+                    <span class="brand-mark">◎</span>
+                    <span class="brand-name">[APP_NAME]</span>
+                </div>
+                <p class="muted">© <span id="year"></span> [COMPANY_NAME].</p>
+            </div>
+            <div class="footer-links" aria-label="Footer">
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./terms.html">Terms of Service</a>
+                <a href="./refund.html">Refund & Cancellation</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.querySelector('[data-nav-toggle]');
+        const mobileNav = document.getElementById('mobileNav');
+        if (btn && mobileNav) {
+            btn.addEventListener('click', () => {
+                const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!isOpen));
+                mobileNav.hidden = isOpen;
+            });
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
